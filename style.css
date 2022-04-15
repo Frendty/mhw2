@@ -1,0 +1,77 @@
+.question-name {
+    background-size: cover;
+}
+
+.choice-grid {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.choice-grid div.opacity {
+    opacity: 0.6;
+}
+
+.choice-grid div {
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.choice-grid div.checked {
+    background-color: #cfe3ff;
+}
+
+@media(max-width: 700px) {
+    article {
+        width: 95%;
+    }
+}
+
+@media(max-width: 500px) {
+    .choice-grid div {
+        width: 49%;
+    }
+}
+
+section[data-id='quiz-result'] {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section[data-id='quiz-result'].visible {
+    display: flex;
+}
+
+section[data-id='quiz-result'] h1 {
+    margin: 0px 0px;
+    width: 100%;
+}
+
+section[data-id='quiz-result'] p {
+    width: 100%;
+}
+
+section[data-id='quiz-result'] div.complete-btn {
+    background-color: #cecece;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+section[data-id='quiz-result'] div.complete-btn:hover {
+    background-color: #e0e0e0;
+}
